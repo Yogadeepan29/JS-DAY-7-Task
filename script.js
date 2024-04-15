@@ -11,7 +11,7 @@ const request = new XMLHttpRequest();
   //* a) Get all the countries from Asia continent /region using Filter function
   console.log(`            ${"Countries from Asia region"} `);
   console.log("\n");
-  var res = result.filter((ele)=>ele.region==="Asia")
+  var res = result.filter((ele)=>ele.region==="Asia" || ele.continents==="Asia")
   res.map((ele)=>console.log(`Country Name : ${ele.name.common}`))
 
 //----------------------------------------------------------------------------------------------------------------
